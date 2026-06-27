@@ -22,8 +22,8 @@ All design candidates are kept under `/preview` so they stay browsable side by s
 |---------|------------|------|
 | **blue** | Current design — navy/blue theme | https://saeedtaghavi.github.io/labmatters-landing/preview/blue |
 | **plum** | Current design — plum/soft-pink theme (brand colours) | https://saeedtaghavi.github.io/labmatters-landing/preview/plum |
-| **hub** | Original full community landing (features, testimonials, sponsors) | https://saeedtaghavi.github.io/labmatters-landing/preview/hub |
-| **core** | Minimal landing — the essentials only | https://saeedtaghavi.github.io/labmatters-landing/preview/core |
+| **community** | Full community landing (features, testimonials, sponsors) | https://saeedtaghavi.github.io/labmatters-landing/preview/community |
+| **minimal** | Minimal landing — the essentials only | https://saeedtaghavi.github.io/labmatters-landing/preview/minimal |
 
 > Tip: add a trailing slash if a link 404s — e.g. `…/preview/blue/`.
 
@@ -36,8 +36,8 @@ labmatters-landing/
 ├── preview/
 │   ├── blue/         # current design — navy/blue theme
 │   ├── plum/         # current design — plum/soft-pink theme
-│   ├── hub/          # original full community landing (was v1)
-│   └── core/         # minimal landing (was v2)
+│   ├── community/    # full community landing (was v1)
+│   └── minimal/      # minimal landing (was v2)
 └── README.md
 ```
 
