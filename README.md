@@ -8,39 +8,41 @@
   Landing pages for <strong>LabMatters</strong>, the community &amp; knowledge hub for experimental research labs (built on Discourse), and <strong>PRISM</strong>, our document-digitalisation solution.
 </p>
 
-## Live site
+## 🌐 Live site
 
 The selected design is served from the repository root:
 
 **https://saeedtaghavi.github.io/labmatters-landing/**
 
-## Previews
+## 🔎 Previews
 
-All design candidates are kept under `/preview` so they stay browsable side by side.
+All design candidates are kept under `/preview`, named `v<generation><variant>` so the decision path is visible: **gen 1** explored `community` vs `minimal` (community was chosen and evolved into **gen 2**, offered as `blue` vs `plum`).
 
 | Preview | What it is | Link |
 |---------|------------|------|
-| **blue** | Current design — navy/blue theme | https://saeedtaghavi.github.io/labmatters-landing/preview/blue |
-| **plum** | Current design — plum/soft-pink theme (brand colours) | https://saeedtaghavi.github.io/labmatters-landing/preview/plum |
-| **community** | Full community landing (features, testimonials, sponsors) | https://saeedtaghavi.github.io/labmatters-landing/preview/community |
-| **minimal** | Minimal landing — the essentials only | https://saeedtaghavi.github.io/labmatters-landing/preview/minimal |
+| **v1community** | Gen 1 — full community landing, features, testimonials, sponsors *(chosen)* | https://saeedtaghavi.github.io/labmatters-landing/preview/v1community |
+| **v1minimal** | Gen 1 — minimal landing, the essentials only | https://saeedtaghavi.github.io/labmatters-landing/preview/v1minimal |
+| **v2blue** | Gen 2 — current design, navy/blue theme | https://saeedtaghavi.github.io/labmatters-landing/preview/v2blue |
+| **v2plum** | Gen 2 — current design, plum/soft-pink theme (brand colours) | https://saeedtaghavi.github.io/labmatters-landing/preview/v2plum |
 
-> Tip: add a trailing slash if a link 404s — e.g. `…/preview/blue/`.
+> Tip: add a trailing slash if a link 404s — e.g. `…/preview/v2blue/`.
 
-## Repository structure
+## 📁 Repository structure
 
 ```
 labmatters-landing/
 ├── index.html        # live site (the chosen design)
 ├── assets/           # logos + illustrations for the live site
 ├── preview/
-│   ├── blue/         # current design — navy/blue theme
-│   ├── plum/         # current design — plum/soft-pink theme
-│   ├── community/    # full community landing (was v1)
-│   └── minimal/      # minimal landing (was v2)
+│   ├── v1community/  # gen 1 — full community landing (chosen)
+│   ├── v1minimal/    # gen 1 — minimal landing
+│   ├── v2blue/       # gen 2 — navy/blue theme
+│   └── v2plum/       # gen 2 — plum/soft-pink theme
 └── README.md
 ```
 
 Each landing is self-contained: keep its `index.html` and `assets/` folder together, since pages reference images by relative path (`assets/…`).
 
+## 🚀 Hosting
 
+Served via **GitHub Pages** from the `main` branch (root). The root is the live site; anything under `preview/` is a candidate or archived version. Bootstrap, Font Awesome, and Google Fonts load from their public CDNs, so an internet connection is needed for full styling.
