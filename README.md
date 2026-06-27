@@ -8,13 +8,13 @@
   Landing pages for <strong>LabMatters</strong>, the community &amp; knowledge hub for experimental research labs (built on Discourse), and <strong>PRISM</strong>, our document-digitalisation solution.
 </p>
 
-## 🌐 Live site
+## Live site
 
 The selected design is served from the repository root:
 
 **https://saeedtaghavi.github.io/labmatters-landing/**
 
-## 🔎 Previews
+## Previews
 
 All design candidates are kept under `/preview` so they stay browsable side by side.
 
@@ -27,7 +27,7 @@ All design candidates are kept under `/preview` so they stay browsable side by s
 
 > Tip: add a trailing slash if a link 404s — e.g. `…/preview/blue/`.
 
-## 📁 Repository structure
+## Repository structure
 
 ```
 labmatters-landing/
@@ -43,6 +43,4 @@ labmatters-landing/
 
 Each landing is self-contained: keep its `index.html` and `assets/` folder together, since pages reference images by relative path (`assets/…`).
 
-## 🚀 Hosting
 
-Served via **GitHub Pages** from the `main` branch (root). The root is the live site; anything under `preview/` is a candidate or archived version. Bootstrap, Font Awesome, and Google Fonts load from their public CDNs, so an internet connection is needed for full styling.
