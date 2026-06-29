@@ -1,0 +1,61 @@
+<svg viewBox="0 0 440 280" width="440" height="280" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <defs>
+    <filter id="sh" x="-25%" y="-25%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="6" stdDeviation="9" flood-color="#0b1e3d" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <ellipse cx="220" cy="150" rx="180" ry="98" fill="#e8f0fe" opacity="0.55"/>
+
+  <!-- connection lines (under tiles) -->
+  <line x1="188" y1="130" x2="132" y2="86" stroke="#9bb3d6" stroke-width="2.5"/>
+  <line x1="188" y1="170" x2="132" y2="200" stroke="#9bb3d6" stroke-width="2.5"/>
+  <line x1="262" y1="150" x2="306" y2="142" stroke="#9bb3d6" stroke-width="2.5"/>
+  <!-- sockets -->
+  <circle cx="186" cy="130" r="3.6" fill="#2f7cf6"/>
+  <circle cx="186" cy="170" r="3.6" fill="#2f7cf6"/>
+  <circle cx="262" cy="150" r="3.6" fill="#2f7cf6"/>
+  <!-- data packets -->
+  <rect x="156" y="104" width="9" height="9" rx="2" fill="#4d94ff" transform="rotate(45 160.5 108.5)"/>
+  <rect x="156" y="182" width="9" height="9" rx="2" fill="#4d94ff" transform="rotate(45 160.5 186.5)"/>
+  <rect x="282" y="142" width="9" height="9" rx="2" fill="#4d94ff" transform="rotate(45 286.5 146.5)"/>
+
+  <!-- system tile: database (top-left) -->
+  <g filter="url(#sh)">
+    <rect x="40" y="52" width="94" height="54" rx="10" fill="#ffffff" stroke="#dde5f4" stroke-width="1.5"/>
+  </g>
+  <ellipse cx="66" cy="68" rx="13" ry="4.6" fill="#4d94ff"/>
+  <path d="M53 68 v16 c0 2.6 5.8 4.6 13 4.6 s13 -2 13 -4.6 v-16" fill="#2f7cf6"/>
+  <ellipse cx="66" cy="76" rx="13" ry="4.6" fill="#ffffff" opacity="0.25"/>
+  <rect x="96" y="66" width="28" height="4.5" rx="2.25" fill="#bcd4f7"/>
+  <rect x="96" y="76" width="20" height="4.5" rx="2.25" fill="#e1e9f6"/>
+
+  <!-- system tile: inventory (bottom-left) -->
+  <g filter="url(#sh)">
+    <rect x="40" y="176" width="94" height="54" rx="10" fill="#ffffff" stroke="#dde5f4" stroke-width="1.5"/>
+  </g>
+  <rect x="54" y="190" width="28" height="26" rx="3" fill="#eef4fe" stroke="#2f7cf6" stroke-width="1.5"/>
+  <line x1="54" y1="203" x2="82" y2="203" stroke="#2f7cf6" stroke-width="1.5"/>
+  <line x1="68" y1="190" x2="68" y2="203" stroke="#2f7cf6" stroke-width="1.5"/>
+  <rect x="96" y="194" width="28" height="4.5" rx="2.25" fill="#bcd4f7"/>
+  <rect x="96" y="204" width="20" height="4.5" rx="2.25" fill="#e1e9f6"/>
+
+  <!-- system tile: app/LIMS (right) -->
+  <g filter="url(#sh)">
+    <rect x="306" y="114" width="96" height="56" rx="10" fill="#ffffff" stroke="#dde5f4" stroke-width="1.5"/>
+  </g>
+  <rect x="320" y="126" width="34" height="30" rx="4" fill="#eef4fe" stroke="#2f7cf6" stroke-width="1.5"/>
+  <line x1="320" y1="135" x2="354" y2="135" stroke="#2f7cf6" stroke-width="1.5"/>
+  <circle cx="325" cy="130.5" r="1.4" fill="#2f7cf6"/>
+  <circle cx="330" cy="130.5" r="1.4" fill="#2f7cf6"/>
+  <rect x="364" y="128" width="30" height="4.5" rx="2.25" fill="#bcd4f7"/>
+  <rect x="364" y="138" width="22" height="4.5" rx="2.25" fill="#e1e9f6"/>
+  <rect x="364" y="148" width="26" height="4.5" rx="2.25" fill="#e1e9f6"/>
+
+  <!-- central API hub -->
+  <circle cx="220" cy="150" r="40" fill="#0b1e3d" filter="url(#sh)"/>
+  <polyline points="211,140 201,150 211,160" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="216" y1="138" x2="226" y2="162" stroke="#ffffff" stroke-width="3" stroke-linecap="round"/>
+  <polyline points="231,140 241,150 231,160" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="220" y="212" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2" fill="#0b1e3d">API</text>
+</svg>
